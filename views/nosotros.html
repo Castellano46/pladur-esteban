@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | ESTEBAN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-primary text-white selection:bg-accent selection:text-primary">
+    <!-- Premium Background System -->
+    <div class="bg-premium"></div>
+    <div class="bg-technical"></div>
+    <div class="bg-texture"></div>
+
+    <div class="page-transition" id="transition"></div>
+
+    <header class="fixed top-0 w-full z-50 px-6 lg:px-12 py-8 flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold tracking-tighter uppercase">Esteban</a>
+        <nav class="hidden md:flex space-x-12">
+            <a href="/" class="nav-link text-xs uppercase tracking-widest font-bold">Inicio</a>
+            <a href="/nosotros" class="nav-link text-xs uppercase tracking-widest font-bold text-accent">Nosotros</a>
+            <a href="/servicios" class="nav-link text-xs uppercase tracking-widest font-bold">Servicios</a>
+            <a href="/proyectos" class="nav-link text-xs uppercase tracking-widest font-bold">Proyectos</a>
+            <a href="/resenas" class="nav-link text-xs uppercase tracking-widest font-bold">Reseñas</a>
+            <a href="/contacto" class="nav-link text-xs uppercase tracking-widest font-bold">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="pt-40">
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto px-6 lg:px-12 mb-32">
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+                <div class="lg:w-1/2 space-y-12 reveal">
+                    <h1 class="text-7xl lg:text-9xl font-bold leading-none">NUESTRA <br> <span class="italic text-accent">ESENCIA</span></h1>
+                    <div class="space-y-8">
+                        <p class="text-xl leading-relaxed text-text-muted">
+                            Nacidos de la pasión por la precisión técnica y la elegancia arquitectónica, en <span class="text-white font-bold">Esteban</span> hemos redefinido lo que significa la construcción en seco de alta gama.
+                        </p>
+                        <p class="text-lg leading-relaxed text-text-muted">
+                            Lo que comenzó como un compromiso con la excelencia hace más de <span class="text-accent font-bold">15 años</span>, se ha convertido hoy en un estándar de oro para los estudios de arquitectura más exigentes. No solo levantamos muros; creamos lienzos perfectos donde la luz y el sonido se comportan según el deseo del diseñador.
+                        </p>
+                        <p class="text-lg leading-relaxed text-text-muted">
+                            Cada curva, cada ángulo y cada junta es un testimonio de nuestra obsesión por el detalle, fusionando la maestría artesanal con las tecnologías más avanzadas de aislamiento y estructura. Entendemos que el lujo reside en lo invisible: en la perfección de una superficie y en el confort acústico absoluto.
+                        </p>
+                    </div>
+                    <div class="flex space-x-12 pt-8 border-t border-white/10">
+                        <div>
+                            <span class="block text-5xl font-bold text-accent tracking-tighter">15+</span>
+                            <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-text-muted">Años de Maestría</span>
+                        </div>
+                        <div>
+                            <span class="block text-5xl font-bold text-accent tracking-tighter">600+</span>
+                            <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-text-muted">Obras Entregadas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative reveal" style="transition-delay: 0.3s;">
+                    <div class="relative group">
+                        <img src="img/team.png" alt="Team" class="grayscale group-hover:grayscale-0 transition-all duration-1000 rounded-sm shadow-2xl">
+                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-1000"></div>
+                    </div>
+                    <div class="quote-box absolute -bottom-10 -right-4 lg:-right-12 p-12 max-w-[420px] rounded-sm">
+                        <svg class="absolute -top-6 -left-6 w-12 h-12 text-accent/30" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L22.017 3V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM2.017 21L2.017 18C2.017 16.8954 2.91243 16 4.017 16H7.017C7.56928 16 8.017 15.5523 8.017 15V9C8.017 8.44772 7.56928 8 7.017 8H4.017C2.91243 8 2.017 7.10457 2.017 6V3L10.017 3V15C10.017 18.3137 7.33072 21 4.017 21H2.017Z"/></svg>
+                        <p class="text-xl italic leading-relaxed text-white font-serif relative z-10">
+                            "La arquitectura es el juego sabio, correcto y magnífico de los volúmenes bajo la luz."
+                        </p>
+                        <span class="block mt-6 text-xs uppercase tracking-[0.4em] text-accent font-bold">— Le Corbusier</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="py-32 bg-white/5">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                    <div class="space-y-6 reveal">
+                        <div class="w-12 h-12 flex items-center justify-center border border-accent text-accent">
+                            <i data-lucide="Eye"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold italic">Visión</h3>
+                        <p class="text-text-muted leading-relaxed">Ser el referente indiscutible en sistemas de construcción en seco para proyectos de alta gama en toda Europa.</p>
+                    </div>
+                    <div class="space-y-6 reveal" style="transition-delay: 0.2s;">
+                        <div class="w-12 h-12 flex items-center justify-center border border-accent text-accent">
+                            <i data-lucide="Target"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold italic">Misión</h3>
+                        <p class="text-text-muted leading-relaxed">Elevar la calidad de vida de las personas transformando sus espacios con precisión, técnica y alma.</p>
+                    </div>
+                    <div class="space-y-6 reveal" style="transition-delay: 0.4s;">
+                        <div class="w-12 h-12 flex items-center justify-center border border-accent text-accent">
+                            <i data-lucide="ShieldCheck"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold italic">Valores</h3>
+                        <p class="text-text-muted leading-relaxed">Excelencia artesanal, honestidad técnica y compromiso absoluto con los plazos y la calidad final.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-32">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="mb-20 reveal">
+                    <h2 class="text-5xl lg:text-7xl font-bold">El Equipo <br> <span class="italic text-accent">Esteban</span></h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <!-- Member 1 -->
+                    <div class="group reveal space-y-6">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-sm bg-white/5 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Pedro G." class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                            <div class="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-all duration-700"></div>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold tracking-tight">Pedro G.</h4>
+                            <p class="text-xs uppercase tracking-[0.3em] text-accent font-bold mt-1">Fundador & CEO</p>
+                        </div>
+                    </div>
+                    <!-- Member 2 -->
+                    <div class="group reveal space-y-6" style="transition-delay: 0.1s;">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-sm bg-white/5 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800" alt="Elena M." class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                            <div class="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-all duration-700"></div>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold tracking-tight">Elena M.</h4>
+                            <p class="text-xs uppercase tracking-[0.3em] text-accent font-bold mt-1">Directora Técnica</p>
+                        </div>
+                    </div>
+                    <!-- Member 3 -->
+                    <div class="group reveal space-y-6" style="transition-delay: 0.2s;">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-sm bg-white/5 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800" alt="Javier L." class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                            <div class="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-all duration-700"></div>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold tracking-tight">Javier L.</h4>
+                            <p class="text-xs uppercase tracking-[0.3em] text-accent font-bold mt-1">Jefe de Obra</p>
+                        </div>
+                    </div>
+                    <!-- Member 4 -->
+                    <div class="group reveal space-y-6" style="transition-delay: 0.3s;">
+                        <div class="relative aspect-[3/4] overflow-hidden rounded-sm bg-white/5 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" alt="Sofía R." class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                            <div class="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-all duration-700"></div>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold tracking-tight">Sofía R.</h4>
+                            <p class="text-xs uppercase tracking-[0.3em] text-accent font-bold mt-1">Arquitecta de Interiores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-32 pb-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
+                <div class="footer-brand space-y-8">
+                    <h3 class="text-4xl font-bold uppercase tracking-tighter">Esteban</h3>
+                    <p class="text-text-muted leading-relaxed text-sm">Elevando los estándares de la architecture interior mediante sistemas de pladur de alta precisión.</p>
+                    <div class="social-grid">
+                        <a href="https://instagram.com/esteban_pladur" target="_blank" class="social-icon" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/esteban-pladur" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="https://facebook.com/estebanpladur" target="_blank" class="social-icon" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column space-y-8">
+                    <h4>Navegación</h4>
+                    <nav class="space-y-4">
+                        <a href="/" class="footer-link">Inicio</a>
+                        <a href="/nosotros" class="footer-link">Nosotros</a>
+                        <a href="/servicios" class="footer-link">Servicios</a>
+                        <a href="/proyectos" class="footer-link">Proyectos</a>
+                    </nav>
+                </div>
+
+                <div class="footer-column space-y-8">
+                    <h4>Contacto</h4>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 group cursor-pointer">
+                            <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-accent/10 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </div>
+                            <span class="text-sm font-medium">info@estebanpladur.com</span>
+                        </div>
+                        <div class="flex items-center space-x-4 group cursor-pointer">
+                            <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-accent/10 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <span class="text-sm font-medium">+34 900 000 000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-column space-y-8">
+                    <h4>Newsletter</h4>
+                    <p class="text-xs text-text-muted leading-relaxed">Suscríbase para recibir las últimas tendencias en diseño interior y construcción técnica.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Su correo electrónico" required>
+                        <button type="submit" class="newsletter-btn" aria-label="Suscribirse">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] uppercase tracking-[0.3em] text-text-muted font-bold">
+                <p>© 2026 Esteban Pladur. Excelencia Certificada.</p>
+                <div class="flex space-x-12">
+                    <a href="#" data-legal="aviso" class="hover:text-accent transition-colors">Aviso Legal</a>
+                    <a href="#" data-legal="privacidad" class="hover:text-accent transition-colors">Privacidad</a>
+                    <a href="#" data-legal="cookies" class="hover:text-accent transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Legal Modal -->
+    <div id="legal-modal" class="legal-modal">
+        <div class="legal-modal-overlay"></div>
+        <div class="legal-modal-container">
+            <button class="close-modal" aria-label="Cerrar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="legal-content">
+                <h2 id="legal-modal-title"></h2>
+                <div id="legal-modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

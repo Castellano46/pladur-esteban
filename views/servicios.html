@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | ESTEBAN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-primary text-white">
+    <!-- Premium Background System -->
+    <div class="bg-premium"></div>
+    <div class="bg-technical"></div>
+    <div class="bg-texture"></div>
+
+    <div class="page-transition" id="transition"></div>
+
+    <header class="fixed top-0 w-full z-50 px-6 lg:px-12 py-8 flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold tracking-tighter uppercase">Esteban</a>
+        <nav class="hidden md:flex space-x-12">
+            <a href="/" class="nav-link text-xs uppercase tracking-widest font-bold">Inicio</a>
+            <a href="/nosotros" class="nav-link text-xs uppercase tracking-widest font-bold">Nosotros</a>
+            <a href="/servicios" class="nav-link text-xs uppercase tracking-widest font-bold text-accent">Servicios</a>
+            <a href="/proyectos" class="nav-link text-xs uppercase tracking-widest font-bold">Proyectos</a>
+            <a href="/resenas" class="nav-link text-xs uppercase tracking-widest font-bold">Reseñas</a>
+            <a href="/contacto" class="nav-link text-xs uppercase tracking-widest font-bold">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="pt-40">
+        <section class="max-w-7xl mx-auto px-6 lg:px-12 mb-32">
+            <h1 class="text-7xl lg:text-9xl font-bold leading-none mb-12">NUESTROS <br> <span class="italic text-accent">SISTEMAS</span></h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+                <p class="text-xl text-text-muted leading-relaxed">
+                    Desarrollamos soluciones integrales de construcción en seco, combinando ingeniería acústica, aislamiento térmico y diseño arquitectónico de vanguardia.
+                </p>
+                <div class="flex gap-12">
+                    <div class="space-y-2">
+                        <span class="block text-accent font-bold text-sm uppercase tracking-widest">Precisión</span>
+                        <p class="text-xs text-text-muted">Nivel de acabado Q4 certificado.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="block text-accent font-bold text-sm uppercase tracking-widest">Garantía</span>
+                        <p class="text-xs text-text-muted">Materiales premium certificados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Services -->
+        <section class="py-32">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-px bg-border">
+                <!-- Service 1 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 bg-primary reveal">
+                    <div class="p-12 lg:p-20 space-y-8 border-r border-border">
+                        <span class="text-accent font-bold text-sm tracking-[0.3em] uppercase">01 / Construcción</span>
+                        <h2 class="text-5xl font-bold italic">Tabiquería Técnica</h2>
+                        <p class="text-text-muted leading-relaxed">Sistemas de pladur para divisiones interiores de alto rendimiento. Especialistas en tabiques curvados, foseados para iluminación y muebles de obra integrados.</p>
+                        <ul class="space-y-4 text-sm font-medium">
+                            <li class="flex items-center space-x-3"><i data-lucide="Check" class="w-4 h-4 text-accent"></i><span>Acabado Q4 liso espejo</span></li>
+                            <li class="flex items-center space-x-3"><i data-lucide="Check" class="w-4 h-4 text-accent"></i><span>Refuerzos para cargas pesadas</span></li>
+                        </ul>
+                    </div>
+                    <div class="relative overflow-hidden group">
+                        <img src="img/services.png" alt="Pladur" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000">
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 bg-primary reveal" style="transition-delay: 0.2s;">
+                    <div class="relative overflow-hidden group order-2 lg:order-1">
+                        <img src="img/hero.png" alt="Aislamiento" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000">
+                    </div>
+                    <div class="p-12 lg:p-20 space-y-8 border-l border-border order-1 lg:order-2">
+                        <span class="text-accent font-bold text-sm tracking-[0.3em] uppercase">02 / Confort</span>
+                        <h2 class="text-5xl font-bold italic">Ingeniería Acústica</h2>
+                        <p class="text-text-muted leading-relaxed">Aislamiento acústico avanzado mediante el uso de láminas bituminosas, lanas de roca de alta densidad y sistemas de desacoplamiento vibratorio.</p>
+                        <ul class="space-y-4 text-sm font-medium">
+                            <li class="flex items-center space-x-3"><i data-lucide="Check" class="w-4 h-4 text-accent"></i><span>Reducción de hasta 60dB</span></li>
+                            <li class="flex items-center space-x-3"><i data-lucide="Check" class="w-4 h-4 text-accent"></i><span>Certificación acústica de obra</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 bg-primary reveal">
+                    <div class="p-12 lg:p-20 space-y-8 border-r border-border">
+                        <span class="text-accent font-bold text-sm tracking-[0.3em] uppercase">03 / Estética</span>
+                        <h2 class="text-5xl font-bold italic">Techos de Diseño</h2>
+                        <p class="text-text-muted leading-relaxed">Techos desmontables, fijos y decorativos. Instalación de molduras modernas y sistemas de iluminación indirecta integrados en el propio sistema.</p>
+                        <ul class="space-y-4 text-sm font-medium">
+                            <li class="flex items-center space-x-3"><i data-lucide="Check" class="w-4 h-4 text-accent"></i><span>Sistemas registrables invisibles</span></li>
+                            <li class="flex items-center space-x-3"><i data-lucide="Check" class="w-4 h-4 text-accent"></i><span>Iluminación LED perimetral</span></li>
+                        </ul>
+                    </div>
+                    <div class="relative overflow-hidden group">
+                        <img src="img/services.png" alt="Techos" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-32 pb-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
+                <div class="footer-brand space-y-8">
+                    <h3 class="text-4xl font-bold uppercase tracking-tighter">Esteban</h3>
+                    <p class="text-text-muted leading-relaxed text-sm">Elevando los estándares de la arquitectura interior mediante sistemas de pladur de alta precisión.</p>
+                    <div class="social-grid">
+                        <a href="https://instagram.com/esteban_pladur" target="_blank" class="social-icon" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/esteban-pladur" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="https://facebook.com/estebanpladur" target="_blank" class="social-icon" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column space-y-8">
+                    <h4>Navegación</h4>
+                    <nav class="space-y-4">
+                        <a href="/" class="footer-link">Inicio</a>
+                        <a href="/nosotros" class="footer-link">Nosotros</a>
+                        <a href="/servicios" class="footer-link">Servicios</a>
+                        <a href="/proyectos" class="footer-link">Proyectos</a>
+                    </nav>
+                </div>
+
+                <div class="footer-column space-y-8">
+                    <h4>Contacto</h4>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 group cursor-pointer">
+                            <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-accent/10 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </div>
+                            <span class="text-sm font-medium">info@estebanpladur.com</span>
+                        </div>
+                        <div class="flex items-center space-x-4 group cursor-pointer">
+                            <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-accent/10 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <span class="text-sm font-medium">+34 900 000 000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-column space-y-8">
+                    <h4>Newsletter</h4>
+                    <p class="text-xs text-text-muted leading-relaxed">Suscríbase para recibir las últimas tendencias en diseño interior y construcción técnica.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Su correo electrónico" required>
+                        <button type="submit" class="newsletter-btn" aria-label="Suscribirse">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] uppercase tracking-[0.3em] text-text-muted font-bold">
+                <p>© 2026 Esteban Pladur. Excelencia Certificada.</p>
+                <div class="flex space-x-12">
+                    <a href="#" data-legal="aviso" class="hover:text-accent transition-colors">Aviso Legal</a>
+                    <a href="#" data-legal="privacidad" class="hover:text-accent transition-colors">Privacidad</a>
+                    <a href="#" data-legal="cookies" class="hover:text-accent transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Legal Modal -->
+    <div id="legal-modal" class="legal-modal">
+        <div class="legal-modal-overlay"></div>
+        <div class="legal-modal-container">
+            <button class="close-modal" aria-label="Cerrar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="legal-content">
+                <h2 id="legal-modal-title"></h2>
+                <div id="legal-modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
