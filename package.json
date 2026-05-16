@@ -2,9 +2,8 @@
   "name": "pladur",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [],
@@ -15,6 +14,6 @@
     "body-parser": "^2.2.2",
     "cors": "^2.8.6",
     "csv-writer": "^1.6.0",
-    "express": "^5.2.1"
+    "express": "^4.18.2"
   }
 }
